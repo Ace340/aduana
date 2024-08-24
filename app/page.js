@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import { Banner } from "@/components/Banner";
 import Navbar from "@/components/Navbar";
 import Whatsapp from "@/components/Whatsapp";
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <Banner />
       <Whatsapp />
+      <About />
     </main>
   );
 }
