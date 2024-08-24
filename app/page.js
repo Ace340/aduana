@@ -3,7 +3,7 @@ import { Banner } from "@/components/Banner";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import Whatsapp from "@/components/Whatsapp";
-import Image from "next/image";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <Whatsapp />
       <About />
       <Services />
+      <Contact />
     </main>
   );
 }
