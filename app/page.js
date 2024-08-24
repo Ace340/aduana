@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import { Banner } from "@/components/Banner";
 import Navbar from "@/components/Navbar";
+import Services from "@/components/Services";
 import Whatsapp from "@/components/Whatsapp";
 import Image from "next/image";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Banner />
       <Whatsapp />
       <About />
+      <Services />
     </main>
   );
 }
