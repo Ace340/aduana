@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { staggerContainer, fadeIn } from '../utils/motion';
+import Image from "next/image";
 
 function About() {
   return (
@@ -21,10 +22,12 @@ function About() {
                 className={`flex-1 flex justify-center items-center`}
             >
                 {/* Logo on the left side */}
-                <img 
+                <Image
                     src="/logo-2.png"
                     alt="pangea logo"
-                    className="w-[55%] h-[55%] object-contain"
+                    className="object-contain intrisic"
+                    width={500} // Ancho base de la imagen, puedes ajustar este valor
+                    height={500} // Altura base de la imagen, puedes ajustar este valor
                 />
             </motion.div>
             <motion.div

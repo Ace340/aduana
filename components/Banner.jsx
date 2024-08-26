@@ -1,43 +1,68 @@
 "use client";
 
 import { Carousel } from "flowbite-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function Banner() {
   return (
     // <section className="sm:p-16 xs:p-8 px-6 relative max-h-screen mt-2" id="inicio">    
-        <div className="h-80 sm:h-64 xl:h-80 2xl:h-96">
+        <div className="h-[30rem] sm:h-[32rem] md:h-[36rem] lg:h-[40rem] xl:h-[44rem] mt-4">
             <Carousel slideInterval={5000}>
-            {/*Item 1 */}
-                <div>
-                    <img src="/cargo.jpg" alt="cargo truck" />
-                    <div className="absolute top-1/2 left-6 sm:left-10 md:left-1/2 transform md:-translate-x-1/2 text-center text-white">
-                        <h1 className="mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase bebas-neue">
-                            menos impuestos, más ganancias
-                        </h1>
+                {/*Item 1 */}
+                <div className="relative h-full">
+                    <Image 
+                        src="/cargo.jpg"
+                        alt="cargo truck" 
+                        fill // Ajusta el tamaño de la imagen al contenedor
+                        style={{ objectFit: 'cover' }} // Similar a `object-cover` en CSS
+                        className="absolute inset-0 cover"
+                    />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+                        <div className="mb-4">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase bebas-neue">
+                                menos impuestos, más ganancias
+                            </h1>
+                        </div>
                         <Link href="#contacto">
-                            <button className="px-4 py-2 bg-[#f08700] rounded barlow uppercase">quiero comenzar</button>
+                            <button className="px-4 py-2 sm:px-4 sm:py-2 bg-[#f08700] rounded barlow uppercase">quiero comenzar</button>
                         </Link>
                     </div>
                 </div>      
+
                 {/*Item 2 */}
-                <div>
-                    <img src="/personal.jpg" alt="personal de aduana" />
-                    <div className="absolute top-1/2 left-6 sm:left-10 md:left-1/2 transform md:-translate-x-1/2 text-center text-white">
-                        <h1 className="mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase bebas-neue">
-                        te acompañamos en el camino
-                        </h1>
+                <div className="relative h-full">
+                    <Image 
+                        src="/personal.jpg" 
+                        alt="personal de aduana" 
+                        fill // Ajusta el tamaño de la imagen al contenedor
+                        style={{ objectFit: 'cover' }} // Similar a `object-cover` en CSS
+                        className="absolute inset-0"
+                    />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+                        <div className="mb-4">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase bebas-neue">
+                                te acompañamos en el camino
+                            </h1>
+                        </div>
                         <Link href="#contacto">
-                        <button className="px-4 py-2 bg-[#f08700] rounded barlow uppercase">Quiero conocer más</button>
+                            <button className="px-4 py-2 sm:px-4 sm:py-2 bg-[#f08700] rounded barlow uppercase">Quiero conocer más</button>
                         </Link>
                     </div>
                 </div> 
+
                 {/*Item 3 */}
-                <div>
-                    <img src="/truck.jpg" alt="camion" />
-                    <div className="absolute top-[35%] left-6 sm:left-10 md:left-1/2 transform md:-translate-x-1/2 text-center text-white">
-                        <h3 className="mb-2 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold uppercase bebas-neue">
-                        el desconocimiento en leyes de aduana no tiene que significar decisiones o gastos improvisados para tu negocio. nuestro propósito es aumentar tus ganancias al menor costo, ofreciendo transparencia y la mejor planificación posible que tu empresa necesite
+                <div className="relative h-full">
+                    <Image 
+                        src="/truck.jpg" 
+                        alt="camion" 
+                        fill // Ajusta el tamaño de la imagen al contenedor
+                        style={{ objectFit: 'cover' }} // Similar a `object-cover` en CSS
+                        className="absolute inset-0"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center text-center text-white px-4">
+                        <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold uppercase bebas-neue text-center">
+                            el desconocimiento en leyes de aduana no tiene que significar decisiones o gastos improvisados para tu negocio. nuestro propósito es aumentar tus ganancias al menor costo, ofreciendo transparencia y la mejor planificación posible que tu empresa necesite
                         </h3>
                     </div>
                 </div>        

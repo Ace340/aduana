@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,10 +23,12 @@ const Navbar = () => {
   >
     <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
       <Link href="#inicio">
-      <img
-        src="logo.png"
+      <Image
+        src="/logo.png"
         alt="logo"
         className="w-[160px] h-[90px] object-contain"
+        width={160}
+        height={90}
       />
       </Link>
 
@@ -43,10 +46,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div onClick={handleNav} className="sm:hidden cursor-pointer pl-24">
-        <img
+        <Image
           src="/menu.svg"
           alt="menu"
           className="w-[24px] h-[24px] object-contain"
+          width={24}
+          height={24}
         />
       </div>
     </div>
@@ -58,10 +63,12 @@ const Navbar = () => {
     }>
       <div className="flex w-full items-center justify-end">
         <div onClick={handleNav} className="cursor-pointer">
-          <img
+          <Image
             src="/close.png"
             alt="close"
             className="w-[24px] h-[24px] object-contain"
+            width={24}
+            height={24}
           />
         </div>
       </div>
@@ -93,20 +100,22 @@ const Navbar = () => {
       </div>
       <div className="flex flex-row justify-around pt-10 items-center">
         <Link href="https://www.facebook.com/profile.php?id=100077358043590">
-          <img src="/facebook.png" alt="facebook" className="w-[24px] h-[24px] object-contain" />
+          <Image src="/facebook.png" alt="facebook" className="w-[24px] h-[24px] object-contain" width={24} height={24}/>
         </Link>
         <Link href="https://www.instagram.com/pangea_ve/">
-          <img src="/instagram2.png" alt="instagram" className="w-[24px] h-[24px] object-contain" />
+          <Image src="/instagram2.png" alt="instagram" className="w-[24px] h-[24px] object-contain" width={24} height={24} />
         </Link>
         <Link href="https://www.linkedin.com/company/pangeaworld/">
-        <img src="/linkedin.svg" alt="linkedin" className="w-[24px] h-[24px] object-contain" />
+        <Image src="/linkedin.svg" alt="linkedin" className="w-[24px] h-[24px] object-contain" width={24} height={24} />
         </Link>
       </div>
       <Link href="#inicio">
-      <img
-        src="logo.png"
+      <Image
+        src="/logo.png"
         alt="logo"
         className="w-[250px] h-[60px] object-contain pt-6"
+        width={250}
+        height={60}
       />
       </Link>
     </div>

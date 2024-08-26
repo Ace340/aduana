@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
+import Image from 'next/image';
 
 
 export const Services = () => {
@@ -32,31 +33,33 @@ export const Services = () => {
         className="flex-[0.5] lg:max-w-[370px] flex flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#F08700] relative"
       >
         <div className="flex flex-col items-center mt-4">
-        <img
+        <Image
           src="/Iconos-01.png"
           alt="tramites y consultas"
           className="w-[290px] h-[170px] object-contain rounded-xl"
+          width={290}
+          height={170}
         />
           <h3 className="font-bebas font-bold sm:text-[28px] text-[24px] sm:leading-[40.32px] leading-[36.32px] text-black text-center mt-1">
             IMPORT
           </h3>
         </div>
-        <div className="text-black font-bebas">
-            <h4 className="text-black text-justify mt-2 italic">
+        <div className="text-black font-bebas uppercase">
+            <h4 className="text-black mt-2 italic">
                 IMPORTADOR FRECUENTE - PACK
             </h4>
-            <ul className="list-disc mt-2 ml-2 barlow sm:text-[16px] text-[16px] text-black text-justify">
+            <ul className="list-disc mt-2 ml-2 barlow sm:text-[14px] text-[14px] text-black text-justify">
                 <li>Agenciamiento de aduanas</li>
                 <li>Aplicación de exenciones y exoneraciones</li>
                 <li>Gestión de pagos y facturación</li>
                 <li>Y mucho más</li>
             </ul>
         </div>
-        <div className="text-black font-bebas">
-            <h4 className="text-black text-justify mt-2 italic">
+        <div className="text-black font-bebas uppercase">
+            <h4 className="text-black mt-2 italic">
                 NUEVO IMPORTADOR/RUBRO - PACK
             </h4>
-            <ul className="list-disc mt-2 ml-2 barlow sm:text-[16px] text-[16px] text-black text-justify">
+            <ul className="list-disc mt-2 ml-2 barlow sm:text-[14px] text-[14px] text-black text-justify">
                 <li>Agenciamiento de aduanas</li>
                 <li>Aplicación de exenciones y exoneraciones</li>
                 <li>Entrega de documento de nacionalización</li>
@@ -74,20 +77,22 @@ export const Services = () => {
         className="flex-[0.5] lg:max-w-[370px] flex flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#F08700] relative"
       >
         <div className="flex flex-col items-center mt-4">
-          <img
+          <Image
             src="/Iconos-02.png"
             alt="asesorias"
             className="w-[290px] h-[170px] object-contain rounded-xl"
+            width={290}
+            height={170}
           />
           <h3 className="font-bebas font-bold sm:text-[28px] text-[24px] sm:leading-[40.32px] leading-[36.32px] text-black text-center mt-2">
             EXPORT
           </h3>
         </div>
-        <div className="text-black font-bebas">
-            <h4 className="text-black text-justify mt-2 italic">
+        <div className="text-black font-bebas uppercase">
+            <h4 className="text-black mt-2 italic">
                 EXPORTADOR FRECUENTE - PACK
             </h4>
-            <ul className="list-disc mt-2 ml-2 barlow sm:text-[16px] text-[16px] text-black text-justify">
+            <ul className="list-disc mt-2 ml-2 barlow sm:text-[14px] text-[14px] text-black text-justify">
                 <li>Agenciamiento de aduanas</li>
                 <li>Régimen aduanero aplicable</li>
                 <li>Coordinació de transporte nacional</li>
@@ -108,23 +113,66 @@ export const Services = () => {
         className="flex-[0.5] lg:max-w-[370px] flex flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#F08700] relative"
       >
         <div className="flex flex-col items-center mt-4">
-          <img
+          <Image
             src="/Iconos-03.png"
             alt="transporte terrestre"
             className="w-[290px] h-[170px] object-contain rounded-xl"
+            width={290}
+            height={170}
           />
           <h3 className="font-bebas font-bold sm:text-[28px] text-[24px] sm:leading-[40.32px] leading-[36.32px] text-black text-center mt-1">
             SOLUCIONES EMPRESARIALES
           </h3>
         </div>
-        <div className="text-black font-bebas">
-            <ul className="list-disc mt-2 ml-2 barlow sm:text-[16px] text-[16px] text-black text-justify">
+        <div className="text-black font-bebas uppercase">
+            <ul className="list-disc mt-2 ml-2 barlow sm:text-[14px] text-[14px] text-black text-justify">
                 <li>Asesoría de exención - zonas, puertos, almacenes libres o francos</li>
                 <li>Admisión temporal</li>
                 <li>Admisión para perfeccionamiento</li>
                 <li>Reposición de franquicia</li>
                 <li>Draw Back</li>
                 <li>Sustitución de mercancías</li>
+                <li>Y mucho más</li>
+            </ul>
+        </div>
+        {/* <p className="mt-[24px] barlow sm:text-[24px] text-[20px] sm:leading-[45.6px] leading-[39.6px] text-black text-justify">
+          Movilizamos y cuidamos tu mercancía desde su partida hasta la entrega, monitoreando todo el recorrido.
+        </p> */}
+      </motion.div>
+      {/* Fourth Service */}
+      <motion.div
+        variants={fadeIn('right', 'tween', 0.2, 1)}
+        className="flex-[0.5] lg:max-w-[370px] flex flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#F08700] relative"
+      >
+        <div className="flex flex-col items-center mt-[-10%]">
+          <Image
+            src="/logo-04.png"
+            alt="transporte terrestre"
+            className="w-[500px] h-[250px] object-contain rounded-xl"
+            width={500}
+            height={250}
+          />
+          <h3 className="font-bebas font-bold sm:text-[28px] text-[24px] sm:leading-[40.32px] leading-[36.32px] text-black text-center mt-[-10%]">
+            CONSULTORÍA
+          </h3>
+        </div>
+        <div className="text-black font-bebas uppercase mt-2">
+            <h4 className="text-black mt-1 italic">
+                Prospección - PACK
+            </h4>
+            <ul className="list-disc mt-1 ml-2 barlow sm:text-[14px] text-[14px] text-black text-justify">
+                <li>Elección del incoterm + Redacción de cláusula incoterm</li>
+                <li>Clasificación arancelaria sugerida + Gestión de oficio de clasificación arancelaria</li>
+                <li>Cotización de transporte internacional</li>
+                <li>Y mucho más</li>
+            </ul>
+            <h4 className="text-black mt-1 italic">
+                Básicos - servicios adicionales
+            </h4>
+            <ul className="list-disc mt-1 ml-2 barlow sm:text-[14px] text-[14px] text-black text-justify">
+                <li>Clasificación arancelaria</li>
+                <li>Redacción de contrato de compra internacional</li>
+                <li>Gestión de oficio de valor</li>
                 <li>Y mucho más</li>
             </ul>
         </div>

@@ -6,6 +6,7 @@ import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import Link from 'next/link';
 import { socials } from '../constants';
+import Image from 'next/image';
 
 const World = () => (
   <section className={`${styles.paddings} relative z-10`} id="contacto">
@@ -26,20 +27,28 @@ const World = () => (
         variants={fadeIn('up', 'tween', 0.3, 1)}
         className="relative mt-[68px] flex w-full h-[550px] justify-center items-center"
       >
-        <img src="/map.png" alt="map" className="w-full h-full object-cover filter brightness-50" />
+        <Image 
+          src="/map.png" 
+          alt="map" 
+          fill // Hace que la imagen cubra todo el contenedor
+          style={{
+            objectFit: 'cover', // Similar a `object-cover` en CSS
+            filter: 'brightness(50%)', // Aplica el filtro de brillo
+          }}
+        />
 
         <div className="absolute w-[90%] max-w-[450px] h-[280px] bg-[#F08700] rounded-lg p-6 top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center">
             <ul className="barlow space-y-4 w-full">
                 <li className="text-[#191716] text-xl flex items-center w-full break-words">
-                    <img src="/location.png" alt="location" className="object-contain w-[30px] h-[30px] mr-2" />
+                    <Image src="/location.png" alt="location" className="object-contain w-[30px] h-[30px] mr-2" width={30} height={30} />
                     Caracas, Venezuela
                 </li>
                 <li className="text-[#191716] text-xl flex items-center w-full break-words">
-                    <img src="/telephone.png" alt="telephone" className="object-contain w-[30px] h-[30px] mr-2" />
+                    <Image src="/telephone.png" alt="telephone" className="object-contain w-[30px] h-[30px] mr-2" width={30} height={30} />
                     +58 (414) 2982898 / +58 (424) 2864203
                 </li>
                 <li className="text-[#191716] text-l sm:text-xl flex items-center w-full break-words">
-                    <img src="/mail.png" alt="email" className="object-contain w-[30px] h-[30px] mr-2" />
+                    <Image src="/mail.png" alt="email" className="object-contain w-[30px] h-[30px] mr-2" width={30} height={30} />
                     <Link href="mailto:contacto@pangea.com.ve" className="text-[#191716] hover:text-[#0078d4]">
                         contacto@pangea.com.ve
                     </Link>
@@ -48,10 +57,12 @@ const World = () => (
             <div className="flex gap-6 mt-4">
               {socials.map((social) => (
                 <a key={social.name} href={social.redsocial} target="_blank" rel="noreferrer">
-                  <img
+                  <Image
                     src={social.url}
                     alt={social.name}
                     className="w-[30px] h-[30px] object-contain cursor-pointer"
+                    width={30} 
+                    height={30}
                   />
                 </a>
               ))}
