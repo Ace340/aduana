@@ -34,13 +34,13 @@ export const Services = () => {
       >
         <div className="flex flex-col items-center mt-4">
         <Image
-          src="/Iconos-01.png"
+          src="/contract.png"
           alt="tramites y consultas"
-          className="w-[290px] h-[170px] object-contain rounded-xl"
-          width={290}
-          height={170}
+          className="object-contain rounded-xl ml-6"
+          width={100}
+          height={100}
         />
-          <h3 className="font-bebas font-bold sm:text-[28px] text-[24px] sm:leading-[40.32px] leading-[36.32px] text-black text-center mt-1">
+          <h3 className="font-bebas font-bold sm:text-[28px] text-[24px] sm:leading-[40.32px] leading-[36.32px] text-black text-center mt-4">
             IMPORT
           </h3>
         </div>
@@ -78,13 +78,13 @@ export const Services = () => {
       >
         <div className="flex flex-col items-center mt-4">
           <Image
-            src="/Iconos-02.png"
+            src="/global-shipping.png"
             alt="asesorias"
-            className="w-[290px] h-[170px] object-contain rounded-xl"
-            width={290}
-            height={170}
+            className="ml-6 object-contain rounded-xl"
+            width={100}
+            height={100}
           />
-          <h3 className="font-bebas font-bold sm:text-[28px] text-[24px] sm:leading-[40.32px] leading-[36.32px] text-black text-center mt-2">
+          <h3 className="font-bebas font-bold sm:text-[28px] text-[24px] sm:leading-[40.32px] leading-[36.32px] text-black text-center mt-3">
             EXPORT
           </h3>
         </div>
@@ -95,9 +95,9 @@ export const Services = () => {
             <ul className="list-disc mt-2 ml-2 barlow sm:text-[14px] text-[14px] text-black text-justify">
                 <li>Agenciamiento de aduanas</li>
                 <li>Régimen aduanero aplicable</li>
-                <li>Coordinació de transporte nacional</li>
+                <li>Coordinación de transporte nacional</li>
                 <li>Gestión de pagos y facturación</li>
-                <li>Coordinació y gestió de documentos emitidos por la naviera o el agente de carga</li>
+                <li>Coordinación y gestió de documentos emitidos por la naviera o el agente de carga</li>
                 <li>Gestión de almacen</li>
                 <li>Contenerizació de mercancía</li>
             </ul>
@@ -114,13 +114,13 @@ export const Services = () => {
       >
         <div className="flex flex-col items-center mt-4">
           <Image
-            src="/Iconos-03.png"
+            src="/globe.png"
             alt="transporte terrestre"
-            className="w-[290px] h-[170px] object-contain rounded-xl"
-            width={290}
-            height={170}
+            className="ml-4 object-contain rounded-xl"
+            width={100}
+            height={100}
           />
-          <h3 className="font-bebas font-bold sm:text-[28px] text-[24px] sm:leading-[40.32px] leading-[36.32px] text-black text-center mt-1">
+          <h3 className="font-bebas font-bold sm:text-[28px] text-[24px] sm:leading-[40.32px] leading-[36.32px] text-black text-center mt-3">
             SOLUCIONES EMPRESARIALES
           </h3>
         </div>
@@ -144,15 +144,15 @@ export const Services = () => {
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="flex-[0.5] lg:max-w-[370px] flex flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#F08700] relative"
       >
-        <div className="flex flex-col items-center mt-[-10%]">
+        <div className="flex flex-col items-center mt-4">
           <Image
-            src="/logo-04.png"
+            src="/signature.png"
             alt="transporte terrestre"
-            className="w-[500px] h-[250px] object-contain rounded-xl"
-            width={500}
-            height={250}
+            className="ml-4 object-contain rounded-xl"
+            width={100}
+            height={100}
           />
-          <h3 className="font-bebas font-bold sm:text-[28px] text-[24px] sm:leading-[40.32px] leading-[36.32px] text-black text-center mt-[-10%]">
+          <h3 className="font-bebas font-bold sm:text-[28px] text-[24px] sm:leading-[40.32px] leading-[36.32px] text-black text-center mt-3">
             CONSULTORÍA
           </h3>
         </div>

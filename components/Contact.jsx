@@ -9,13 +9,13 @@ import { socials } from '../constants';
 import Image from 'next/image';
 
 const World = () => (
-  <section className={`${styles.paddings} relative z-10`} id="contacto">
+  <section className={`${styles.paddings} relative z-10 mt-4`} id="contacto">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col items-center justify-center min-h-screen`}
+      className={`${styles.innerWidth} mx-auto flex flex-col items-center justify-center min-h-screen mt-4`}
     >      
     <motion.div
         variants={fadeIn('up', 'tween', 0.3, 1)}

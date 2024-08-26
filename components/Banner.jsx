@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function Banner() {
   return (
-    // <section className="sm:p-16 xs:p-8 px-6 relative max-h-screen mt-2" id="inicio">    
+    <section className="sm:p-16 xs:p-8 px-6 relative max-h-screen mt-2 mb-6" id="inicio">    
         <div className="h-[30rem] sm:h-[32rem] md:h-[36rem] lg:h-[40rem] xl:h-[44rem] mt-4">
             <Carousel slideInterval={5000}>
                 {/*Item 1 */}
@@ -15,8 +15,12 @@ export function Banner() {
                         src="/cargo.jpg"
                         alt="cargo truck" 
                         fill // Ajusta el tamaño de la imagen al contenedor
-                        style={{ objectFit: 'cover' }} // Similar a `object-cover` en CSS
-                        className="absolute inset-0 cover"
+                        style={{ 
+                            objectFit: 'cover',
+                            opacity: 0.7, // Ajusta la opacidad (1 es completamente opaco, 0 es completamente transparente)
+                            filter: 'brightness(0.8)'
+                         }} // Similar a `object-cover` en CSS
+                        className="absolute inset-0 cover dark-overlay"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
                         <div className="mb-4">
@@ -36,7 +40,11 @@ export function Banner() {
                         src="/personal.jpg" 
                         alt="personal de aduana" 
                         fill // Ajusta el tamaño de la imagen al contenedor
-                        style={{ objectFit: 'cover' }} // Similar a `object-cover` en CSS
+                        style={{ 
+                            objectFit: 'cover',
+                            opacity: 0.7, // Ajusta la opacidad (1 es completamente opaco, 0 es completamente transparente)
+                            filter: 'brightness(0.8)'
+                         }} // Similar a `object-cover` en CSS
                         className="absolute inset-0"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
@@ -57,7 +65,10 @@ export function Banner() {
                         src="/truck.jpg" 
                         alt="camion" 
                         fill // Ajusta el tamaño de la imagen al contenedor
-                        style={{ objectFit: 'cover' }} // Similar a `object-cover` en CSS
+                        style={{ 
+                            objectFit: 'cover',
+                            opacity: 0.7, // Ajusta la opacidad (1 es completamente opaco, 0 es completamente transparente)
+                            filter: 'brightness(0.8)' }} // Similar a `object-cover` en CSS
                         className="absolute inset-0"
                     />
                     <div className="absolute inset-0 flex items-center justify-center text-center text-white px-4">
@@ -68,6 +79,6 @@ export function Banner() {
                 </div>        
             </Carousel>
         </div>
-    // </section>
+    </section>
   );
 }

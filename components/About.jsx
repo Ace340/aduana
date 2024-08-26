@@ -36,7 +36,7 @@ function About() {
             >
                 {/* Text on the right side */}
                 <h1 className="text-[40px] text-[#191716] font-bold font-bebas uppercase">Nosotros</h1>
-                <div className="mt-[31px] mb-4 text-[#191716] flex flex-col text-xl max-w gap-[24px] pr-5 text-justify">
+                <div className="mt-[31px] mb-4 text-[#191716] flex flex-col text-xl max-w gap-[24px] pr-5 xl:text-justify">
                     {nosotros}
                 </div>
                 <div className="w-full flex justify-center">
