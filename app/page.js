@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Whatsapp from "@/components/Whatsapp";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Valor from "@/components/Valor";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Banner />
       <Whatsapp />
       <About />
+      <Valor />
       <Services />
       <Contact />
       <Footer />
