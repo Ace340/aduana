@@ -6,6 +6,7 @@ import Whatsapp from "@/components/Whatsapp";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Valor from "@/components/Valor";
+import Preguntas from "@/components/Preguntas";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Valor />
       <Services />
+      <Preguntas />
       <Contact />
       <Footer />
     </main>
