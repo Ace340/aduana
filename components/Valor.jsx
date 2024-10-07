@@ -26,7 +26,7 @@ const Valor = () => {
                 {/* Primer Valor */}
                 <Card
                 className="max-w-sm"
-                renderImage={() => <Image width={500} height={500} src="/atencion.jpg" alt="image 1" />}
+                renderImage={() => <Image width={500} height={500} src="/valor1.jpeg" alt="personal amable" />}
                 >
                     <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white uppercase font-bebas">
                         Atención personalizada
@@ -39,9 +39,9 @@ const Valor = () => {
                 {/* Segundo Valor */}
                 <Card
                 className="max-w-sm"
-                renderImage={() => <Image width={500} height={500} src="/acompanamiento.jpg" alt="image 1" />}
+                renderImage={() => <Image width={500} height={500} src="/valor2.jpeg" alt="personal detallando el proceso" />}
                 >
-                    <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white uppercase font-bebas mt-[-15%]">
+                    <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white uppercase font-bebas xl:mt-[-15%] lg:mt-[-15%]">
                     Acompañamiento en cada fase del proceso
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-400 font-bebas text-justify">
@@ -52,7 +52,7 @@ const Valor = () => {
                 {/* Tercer Valor */}
                 <Card
                 className="max-w-sm"
-                renderImage={() => <Image width={500} height={500} src="/mercado.jpg" alt="image 1" />}
+                renderImage={() => <Image width={500} height={500} src="/valor3.jpeg" alt="evaluando el mercado" />}
                 >
                     <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white uppercase font-bebas mt-6">
                     Prospección de mercado 
@@ -65,7 +65,7 @@ const Valor = () => {
                 {/* Cuarto Valor */}
                 <Card
                 className="max-w-sm"
-                renderImage={() => <Image width={500} height={500} src="/finanza.jpg" alt="image 1" />}
+                renderImage={() => <Image width={500} height={500} src="/valor4.jpeg" alt="documentos" />}
                 >
                     <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white uppercase font-bebas mt-2">
                     Entrega de memoria financiera
@@ -78,9 +78,9 @@ const Valor = () => {
                 {/* Quinto Valor */}
                 <Card
                 className="max-w-sm"
-                renderImage={() => <Image width={500} height={500} src="/compromiso.jpg" alt="image 1" />}
+                renderImage={() => <Image width={500} height={500} src="/valor5.jpeg" alt="cliente satisfecho" />}
                 >
-                    <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white uppercase font-bebas mt-[-15%]">
+                    <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white uppercase font-bebas xl:mt-[-15%]">
                     Compromiso con el cliente
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-400 font-bebas text-justify">
@@ -91,10 +91,10 @@ const Valor = () => {
                 {/* Sexto Valor */}
                 <Card
                 className="max-w-sm"
-                renderImage={() => <Image width={500} height={500} src="/seguridad.jpg" alt="image 1" />}
+                renderImage={() => <Image width={500} height={500} src="/valor6-2.jpg" alt="seguridad en la importacion" />}
                 >
                     <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white uppercase font-bebas">
-                    Seguridad en la importación
+                    Seguridad en las operaciones
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-400 font-bebas text-justify">
                     Garantizamos la seguridad del proceso y de tu mercancía a través de actualizaciones periódicas.

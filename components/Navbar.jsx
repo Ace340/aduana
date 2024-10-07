@@ -37,8 +37,14 @@ const Navbar = () => {
           <Link href="#about">
             <li className="ml-10 uppercase hover:border-b text-2xl">Nosotros</li>
           </Link>
+          <Link href="#valor">
+            <li className="ml-10 uppercase hover:border-b text-2xl">Valores</li>
+          </Link>
           <Link href="#services">
             <li className="ml-10 uppercase hover:border-b text-2xl">Servicios</li>
+          </Link>
+          <Link href="#preguntas">
+            <li className="ml-10 uppercase hover:border-b text-2xl">FAQ</li>
           </Link>
           <Link href="#contacto">
             <li className="ml-10 uppercase hover:border-b text-2xl">Contacto</li>
@@ -82,11 +88,25 @@ const Navbar = () => {
             Nosotros
             </li>
           </Link>
+          <Link href="#valor">
+            <li
+             onClick={() => setMenuOpen(false)}
+             className="py-4 cursor-pointer">
+            Valores
+            </li>
+          </Link>
           <Link href="#servicios">
             <li
              onClick={() => setMenuOpen(false)}
              className="py-4 cursor-pointer">
             Servicios
+            </li>
+          </Link>
+          <Link href="#preguntas">
+            <li
+             onClick={() => setMenuOpen(false)}
+             className="py-4 cursor-pointer">
+            FAQ
             </li>
           </Link>
           <Link href="#contacto">
