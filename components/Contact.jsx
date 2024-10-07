@@ -45,7 +45,7 @@ const World = () => (
                 </li>
                 <li className="text-[#191716] text-xl flex items-center w-full break-words">
                     <Image src="/telephone.png" alt="telephone" className="object-contain w-[30px] h-[30px] mr-2" width={30} height={30} />
-                    +58 (414) 2982898 / +58 (424) 2864203
+                    +58 (424) 2864203 / +58 (424) 2688839
                 </li>
                 <li className="text-[#191716] text-l sm:text-xl flex items-center w-full break-words">
                     <Image src="/mail.png" alt="email" className="object-contain w-[30px] h-[30px] mr-2" width={30} height={30} />

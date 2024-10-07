@@ -24,25 +24,26 @@ const Preguntas = () => {
                 <Accordion.Panel>
                     <Accordion.Title className="bg-[#F08700] uppercase font-bebas text-gray-950 font-bold"> ¿Qué documentos necesito para poder importar?</Accordion.Title>
                     <Accordion.Content className="border-[1px] border-[#F08700] text-gray-950">
+                    <p className="mb-2 text-gray-950 dark:text-gray-400 font-bold">
+                        Exigidos por ley:
+                        </p>
                         <ul className="mb-2 dark:text-gray-400 text-gray-950 list-disc ml-4">
-                            <li>Declaración de Aduanas</li>
-                            <li>Factura Comercial</li>
-                            <li>Documento de embarque</li>
-                            <li>Exigible por ley en caso de aplicar</li>
+                            <li>Declaración de Aduanas.</li>
+                            <li>Factura Comercial.</li>
+                            <li>Documento de embarque.</li>
+                            <li>Otros documentos exigibles por ley, en caso de aplicar.</li>
                         </ul>
                         <p className="mb-2 text-gray-950 dark:text-gray-400 font-bold">
-                        Para poder importar mercancía se necesitan los siguientes requerimientos:
+                        Información complementaria:
                         </p>
                         <ul className="mb-2 text-gray-950 dark:text-gray-400 list-disc ml-4">
-                            <li>Facturas comerciales definitivas, correspondientes a cada proforma.</li>
                             <li>Packing list</li>
                             <li>Proformas (en caso de existir)</li>
                             <li>Ficha técnica del producto con análisis de composición 0-100%, traducido al español.</li>
-                            <li>Certificado de origen</li>
+                            <li>CCertificado de origen, en caso de aplicar</li>
                             <li>Declaración de exportación.</li>
                             <li>Certificado de pago de flete.</li>
                             <li>Comprobante de pago de facturas comerciales definitivas.</li>
-                            <li>Documento de embarque o guía aérea.</li>
                         </ul>
                         </Accordion.Content>
                     </Accordion.Panel>
@@ -50,7 +51,7 @@ const Preguntas = () => {
                         <Accordion.Title className="bg-[#F08700] uppercase font-bebas text-gray-950 font-bold">Precio de los servicios</Accordion.Title>
                         <Accordion.Content>
                         <p className="mb-2 text-gray-950 dark:text-gray-400">
-                        Los precios pueden variar según el servicio
+                        Los precios pueden variar según el servicio.
                         </p>
                         </Accordion.Content>
                     </Accordion.Panel>
@@ -69,10 +70,10 @@ const Preguntas = () => {
                         Actualmente prestamos servicio en:
                         </p>
                         <ul className="text-gray-950 list-disc ml-4">
-                            <li>La Guaira</li>
-                            <li> Maiquetía</li>
-                            <li>Puerto Cabello</li>
-                            <li>Valencia</li>
+                            <li>La Guaira.</li>
+                            <li> Maiquetía.</li>
+                            <li>Puerto Cabello.</li>
+                            <li>Valencia.</li>
                         </ul>
                         </Accordion.Content>
                     </Accordion.Panel>
@@ -80,7 +81,7 @@ const Preguntas = () => {
                         <Accordion.Title className="bg-[#F08700] uppercase font-bebas text-gray-950 font-bold">¿Cómo puedo asegurarme de que mi mercancía llegue a destino de forma segura?</Accordion.Title>
                         <Accordion.Content>
                         <p className="mb-2 text-gray-950 dark:text-gray-400">
-                        Contratar un seguro de flete internacional, nosotros hacemos la gestión
+                        Contratar un seguro de flete internacional, nosotros hacemos la gestión.
                         </p>
                         </Accordion.Content>
                     </Accordion.Panel>
@@ -98,7 +99,7 @@ const Preguntas = () => {
                         <Accordion.Title className="bg-[#F08700] uppercase font-bebas text-gray-950 font-bold">¿Cuál es el tiempo promedio que tarda una carga en llegar a puerto?</Accordion.Title>
                         <Accordion.Content>
                         <p className="mb-2 text-gray-950 dark:text-gray-400">
-                        Dubia 60 dias, Estados Unidos 15 dias, España 30 dias, Brasil 20 dias, Panama 5 dias, Colombia 2 dias, Ecuador 20
+                        Dubai 60 dias, Estados Unidos 15 dias, España 30 dias, Brasil 20 dias, Panama 5 dias, Colombia 2 dias, Ecuador 20
                         dias, China 45 dias.</p>
                         </Accordion.Content>
                     </Accordion.Panel>
@@ -148,7 +149,7 @@ const Preguntas = () => {
                         <Accordion.Title className="bg-[#F08700] uppercase font-bebas text-gray-950 font-bold">¿Qué documentos necesito para poder exportar?</Accordion.Title>
                         <Accordion.Content>
                             <ul className="text-gray-950 list-disc ml-4">
-                                <li>Declaración de aduanas</li>
+                                <li>Declaración de aduanas.</li>
                                 <li>Factura.</li>
                                 <li>Documento de embarque o guía aérea.</li>
                                 <li>Los exigibles legalmente a dichos fines, según el tipo de mercancía de que se trate.</li>

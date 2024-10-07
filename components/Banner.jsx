@@ -12,19 +12,19 @@ export function Banner() {
                 {/*Item 1 */}
                 <div className="relative h-full">
                     <Image 
-                        src="/banner1v2.jpg"
+                        src="/banner1final.jpg"
                         alt="personal de pangea" 
                         fill // Ajusta el tamaño de la imagen al contenedor
                         style={{ 
                             objectFit: 'cover',
-                            opacity: 0.8, // Ajusta la opacidad (1 es completamente opaco, 0 es completamente transparente)
+                            opacity: 1, // Ajusta la opacidad (1 es completamente opaco, 0 es completamente transparente)
                             filter: 'brightness(0.8)'
                          }} // Similar a `object-cover` en CSS
                         className="absolute inset-0 cover dark-overlay"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
                         <div className="mb-4">
-                            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold uppercase bebas-neue text-gray-200">
+                            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold uppercase bebas-neue text-gray-100">
                             Somos una empresa de comercio internacional que maximiza las ganancias de los negocios de nuestros clientes a través de operaciones planificadas
                             </h3>
                         </div>
@@ -37,19 +37,19 @@ export function Banner() {
                 {/*Item 2 */}
                 <div className="relative h-full">
                     <Image 
-                        src="/personal.jpg" 
+                        src="/efecto3.jpg" 
                         alt="personal de aduana" 
                         fill // Ajusta el tamaño de la imagen al contenedor
                         style={{ 
                             objectFit: 'cover',
-                            opacity: 0.8, // Ajusta la opacidad (1 es completamente opaco, 0 es completamente transparente)
+                            opacity: 1, // Ajusta la opacidad (1 es completamente opaco, 0 es completamente transparente)
                             filter: 'brightness(0.8)'
                          }} // Similar a `object-cover` en CSS
                         className="absolute inset-0"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
                         <div className="mb-4">
-                            <h4 className="text-xl sm:text-3xl md:text-4xl lg:text-3xl lg:text-center font-bold uppercase bebas-neue text-gray-200">
+                            <h4 className="text-xl sm:text-3xl md:text-4xl lg:text-3xl lg:text-center font-bold uppercase bebas-neue text-gray-100">
                             Cómo lo hacemos? a través de asesorías integrales, la búsqueda de las opciones logísticas mas beneficiosas de la mano de nuestros aliados comerciales y a través de la ejecución de las operaciones
                             </h4>
                         </div>
@@ -62,12 +62,12 @@ export function Banner() {
                 {/*Item 3 */}
                 <div className="relative h-full">
                     <Image 
-                        src="/banner3.jpeg" 
+                        src="/banner3final.jpg" 
                         alt="mujer atendiendo a cliente en oficina" 
                         fill // Ajusta el tamaño de la imagen al contenedor
                         style={{ 
                             objectFit: 'cover',
-                            opacity: 0.8, // Ajusta la opacidad (1 es completamente opaco, 0 es completamente transparente)
+                            opacity: 1, // Ajusta la opacidad (1 es completamente opaco, 0 es completamente transparente)
                             filter: 'brightness(0.8)' }} // Similar a `object-cover` en CSS
                         className="absolute inset-0"
                     />

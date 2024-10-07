@@ -16,7 +16,7 @@ const barlow_init = Barlow({
 
 export const metadata = {
   title: "Pangea",
-  description: "Agencia aduanal al menor costo, con transparencia y la mejor planificacion posible que tu proyecto necesita.",
+  description: "Agencia aduanal con mejores precios, transparencia y la mejor planificacion posible que tu proyecto necesita.",
 };
 
 export default function RootLayout({ children }) {

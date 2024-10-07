@@ -97,9 +97,9 @@ export const Services = () => {
                 <li>Régimen aduanero aplicable</li>
                 <li>Coordinación de transporte nacional</li>
                 <li>Gestión de pagos y facturación</li>
-                <li>Coordinación y gestió de documentos emitidos por la naviera o el agente de carga</li>
+                <li>Coordinación y gestión de documentos emitidos por la naviera o el agente de carga</li>
                 <li>Gestión de almacen</li>
-                <li>Contenerizació de mercancía</li>
+                <li>Contenerización de mercancía</li>
             </ul>
         </div>
         {/* <p className="mt-[24px] barlow sm:text-[24px] text-[20px] sm:leading-[45.6px] leading-[39.6px] text-black text-justify">
